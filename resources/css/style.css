@@ -1,0 +1,505 @@
+/*----------------------------------------------*/
+/* CSS Foundation */
+/*----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+img {
+  max-width: 100%;
+}
+.clear-fix {
+  zoom: 1;
+}
+.clear-fix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/*----------------------------------------------*/
+/* Reusable CSS */
+/*----------------------------------------------*/
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 80px 0px;
+}
+.box {
+  padding: 1%;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* Icon Css */
+.icon-big {
+  font-size: 350%;
+  color: #e67e22;
+  display: block;
+  margin-bottom: 10px;
+}
+.icon-small {
+  color: #e67e22;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+/* Link Css */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+  transition: border 0.2s, color 0.2s;
+}
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/*----------------------------------------------*/
+/* Button Css */
+/*----------------------------------------------*/
+.btn:link,
+.btn-visited,
+input[type="submit"] {
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 300;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-h:link,
+.btn-h:visited,
+input[type="submit"] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: white;
+  margin-right: 15px;
+}
+.btn-m:link,
+.btn-m:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+.btn-h:hover,
+.btn-h:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #c36a1d;
+  border: 1px solid #c36a1d;
+}
+.btn-m:hover,
+.btn-m:active {
+  background-color: #e67e22;
+  color: white;
+}
+.active {
+  background-color: #e67e22;
+}
+/*----------------------------------------------*/
+/* End of Button Css */
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/* Header Section */
+/*----------------------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+.hero-text-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+/*----------------------------------------------*/
+/* Nav Section */
+/*----------------------------------------------*/
+.logo {
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+  float: left;
+}
+.main-nav {
+  float: right;
+  /* display: flex;
+    justify-content: right; */
+  list-style: none;
+  margin-top: 55px;
+}
+.main-nav li {
+  margin-left: 40px;
+  display: inline-block;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 7px 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 80%;
+  border-bottom: 2px solid transparent; /*important*/
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+/*----------------------------------------------*/
+/* End of Header Section */
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/* Feature Section */
+/*----------------------------------------------*/
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h2:after {
+  display: block;
+  content: " ";
+  background-color: #e67e22;
+  height: 2px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.text {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+.box p {
+  line-height: 145%;
+  font-size: 90%;
+}
+/*----------------------------------------------*/
+/* Meal Section */
+/*----------------------------------------------*/
+.section-meal {
+  padding: 0;
+}
+.meal-showcase {
+  width: 100%;
+  list-style: none;
+}
+.meal-showcase li {
+  display: block;
+  float: left;
+  /* display: inline-block; */
+  width: 25%;
+}
+figure {
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden; /*to prevent overflow from scale*/
+}
+figure img {
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15); /* to remove the gap */
+  transition: transform 0.6s, opacity 0.6s;
+}
+figure img:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}
+/*----------------------------------------------*/
+/* Steps Section */
+/*----------------------------------------------*/
+.section-step {
+  background-color: #f4f4f4;
+}
+.app-screen {
+  width: 40%;
+}
+.step-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+.step-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+.work-step {
+  margin-bottom: 50px;
+}
+.work-step:last-of-type {
+  margin-bottom: 65px;
+}
+.work-step div {
+  float: left;
+  margin-right: 25px;
+  border: 2px solid #e67e22;
+  color: #e67e22;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 8px;
+  text-align: center;
+  font-size: 130%;
+  font-weight: 400;
+}
+.work-step p {
+  padding: 5px;
+}
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+.step-box .btn-app {
+  border: 0px;
+}
+/*----------------------------------------------*/
+/* End of Steps Section */
+/*----------------------------------------------*/
+
+/*----------------------------------------------*/
+/*  Cities Section */
+/*----------------------------------------------*/
+.box h3 {
+  margin-top: 15px;
+  font-weight: 400;
+}
+.city-img {
+  overflow: hidden;
+  background-color: #000;
+}
+.city-img img {
+  opacity: 0.7;
+  transform: scale(1.03);
+  transition: opacity 0.4s;
+}
+.city-img img:hover {
+  opacity: 1;
+}
+/*----------------------------------------------*/
+/*  Testimonial Section */
+/*----------------------------------------------*/
+.section-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/back-customers.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(209, 207, 207);
+}
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  margin: 25px 0;
+  position: relative;
+}
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 500%;
+  font-weight: 700;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+cite {
+  /* display: inline-block; */
+  font-size: 90%;
+}
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+/*----------------------------------------------*/
+/*  Sign up Section */
+/*----------------------------------------------*/
+.section-plan {
+  background-color: #f4f4f4;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px #d7d6d6;
+}
+.card-header {
+  background-color: #fcfcfc;
+  padding: 3%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.price-text {
+  color: #e67e22;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.price-big {
+  font-size: 200%;
+  margin-right: 15px;
+}
+.price-description {
+  font-size: 80%;
+}
+.card-body {
+  padding: 3%;
+  border-bottom: 1px solid #e8e8e8;
+}
+.card-body p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 90%;
+}
+.card-body p ion-icon {
+  color: #e67e22;
+  font-weight: bold;
+  font-size: 120%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.card-footer {
+  padding: 5%;
+  text-align: center;
+}
+.card-footer .btn {
+  margin-top: 0;
+  padding: 15px 25px;
+  font-size: 90%;
+}
+/*----------------------------------------------*/
+/*  Form Section */
+/*----------------------------------------------*/
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  /* font-weight: 400; */
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 1%;
+  font-size: 90%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+input[type="submit"] {
+  margin-top: 10px;
+  font-size: 90%;
+  padding: 10px 20px;
+}
+*:focus {
+  outline: none;
+}
+/*----------------------------------------------*/
+/*  Footer */
+/*----------------------------------------------*/
+footer {
+  background: #333333;
+  color: #dedddd;
+  text-align: center;
+  font-size: 80%;
+  padding: 2%;
+}
+footer div:nth-child(2) {
+  line-height: 145%;
+  width: 70%;
+}
+footer div:last-child p {
+  /* font-weight: 400; */
+  margin: 20px;
+  color: #dedddd;
+  /* text-transform: uppercase; */
+}
+.nav-footer,
+.nav-social {
+  list-style: none;
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 1%;
+}
+/* .nav-footer{
+    float: left;
+}
+.nav-social{
+    float: right;
+} */
+/* .nav-footer li, .nav-social li{
+    display: inline-block;
+    margin-right: 20px;
+} */
+.nav-footer li {
+  margin-right: 20px;
+  float: left;
+}
+.nav-social li {
+  margin-left: 40px;
+  float: right;
+}
+.nav-footer li a,
+.nav-social li a {
+  border-bottom: 0;
+  transition: color 0.2s;
+}
+.nav-social li a {
+  font-size: 150%;
+  color: #fff;
+}
+.nav-footer a:hover {
+  color: #fff;
+}
+.nav-social a:hover {
+  color: #e67e22;
+}
+/*----------------------------------------------*/
+/*  End of Footer */
+/*----------------------------------------------*/

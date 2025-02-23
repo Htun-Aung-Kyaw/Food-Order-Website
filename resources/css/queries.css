@@ -1,0 +1,215 @@
+/*  Large Screen from 1024-1200px */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+
+  .work-step {
+    margin-bottom: 40px;
+  }
+  .step-box:last-child {
+    margin-top: 50px;
+  }
+  .step-box:first-child {
+    margin-top: 20px;
+  }
+  .work-step:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+/*  Large Screen from 769-1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0px;
+  }
+
+  .text {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  /* .work-step{margin-bottom: 15px;}
+    .step-box:last-child{margin-top: 15px;}
+    .step-box:first-child{margin-top: 10px;}
+    .work-step:last-of-type{margin-bottom: 30px;} */
+
+  .app-screen {
+    width: 50%;
+  }
+
+  .city-feature {
+    font-size: 80%;
+  }
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+}
+/* Small Phone to Tablet from 481-768px */
+/* @media only screen and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .row {
+    padding: 0 2%;
+  }
+} */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+
+  /*Header Section*/
+  .main-nav {
+    display: none;
+  }
+  .logo {
+    height: 70px;
+    width: auto;
+  }
+
+  /*End of Header Section*/
+
+  .work-step {
+    margin-bottom: 15px;
+  }
+  .step-box:last-child {
+    margin-top: 15px;
+  }
+  .step-box:first-child {
+    margin-top: 10px;
+  }
+  .work-step:last-of-type {
+    margin-bottom: 30px;
+  }
+
+  .step-box:first-child {
+    text-align: center; /*to align image*/
+    padding-right: 3%;
+    margin-top: 20px;
+  }
+  .step-box:last-child {
+    vertical-align: middle;
+  }
+
+  .app-screen {
+    width: 25%;
+  }
+
+  .work-step {
+    display: block;
+    width: 80%;
+  }
+  .work-step div {
+    display: block;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 500;
+  }
+
+  .btn-app img {
+    height: 30px;
+  }
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .city-feature {
+    font-size: 80%;
+  }
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+  .icon-big {
+    margin-bottom: 0;
+  }
+  .icon {
+    margin: 0 auto;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .nav-footer li,
+  .nav-social li {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /*To overide the margin-left:0 effect of col in grid css*/
+  .section-features .row:last-child > .box,
+  .section-city .row:last-child > .box,
+  .section-plan .row:last-child > .card {
+    margin-left: 8px;
+  }
+}
+
+/* Small Phone from 0-480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form .row div {
+    margin-bottom: 8px;
+  }
+  vb .work-step {
+    display: block;
+    width: 100%;
+  }
+  .contact-form .hide {
+    display: none;
+  }
+  .nav-footer li,
+  .nav-social li {
+    float: none;
+    margin: 0 auto;
+  }
+}
