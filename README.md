@@ -10,7 +10,7 @@ This is written in desktop first approach.
 
 ### Preview
 
-!(Preview)[design/image1.jpg]
-!(Preview)[design/image2.jpg]
-!(Preview)[design/image3.jpg]
-!(Preview)[design/image4.jpg]
+![Preview](design/image1.jpg)
+![Preview](design/image2.jpg)
+![Preview](design/image3.jpg)
+![Preview](design/image4.jpg)
