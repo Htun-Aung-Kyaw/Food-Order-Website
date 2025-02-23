@@ -4,7 +4,7 @@
 
 This is written in desktop first approach.
 
-### *Float Left and Clear Both is used for layout*
+*Float Left and Clear Both is used for layout*
 
 ### Here is [live demo](https://food-order-website-mauve.vercel.app/)
 
